@@ -198,6 +198,12 @@ public class View extends javax.swing.JFrame {
     }//GEN-LAST:event_btnUpdateActionPerformed
     public void displayStudentsList() {
         List<Student> students = ListShow.getStudentList();
+       
+        //last value dhore rakhar jonne
+        Student std = students.get(students.size()-1);
+        txtId.setText(String.valueOf(std.getId()+1));
+        
+        
         DefaultTableModel model = (DefaultTableModel) tblDisplay.getModel();
         model.setRowCount(0);
         Object[] row = new Object[3];
