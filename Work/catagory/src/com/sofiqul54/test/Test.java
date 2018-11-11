@@ -2,8 +2,8 @@ package com.sofiqul54.test;
 
 import com.sofiqul54.domain.Catagory;
 import com.sofiqul54.domain.Product;
-import com.sofiqul54.service.CreateCatagoryTable;
-import com.sofiqul54.service.CreateProductTable;
+import com.sofiqul54.serviceCreate.CreateCatagoryTable;
+import com.sofiqul54.serviceCreate.CreateProductTable;
 import com.sofiqul54.serviceInsert.InsertDataToCatagoryTable;
 import com.sofiqul54.serviceInsert.InsertDataToProductTable;
 import java.util.Date;
