@@ -16,10 +16,20 @@ public class Product {
     private double unitPrice;
     private double totalPrice;
     private Date purchaseDate;
-    private int cat_id;
+   //private int cat_id;
     private Catagory catagory;
 
     public Product() {
+    }
+
+    public Product(int Id, String name, int quantity, double unitPrice, double totalPrice, Date purchaseDate, Catagory catagory) {
+        this.Id = Id;
+        this.name = name;
+        this.quantity = quantity;
+        this.unitPrice = unitPrice;
+        this.totalPrice = totalPrice;
+        this.purchaseDate = purchaseDate;
+        this.catagory = catagory;
     }
 
     public int getId() {
@@ -70,14 +80,6 @@ public class Product {
         this.purchaseDate = purchaseDate;
     }
 
-    public int getCat_id() {
-        return cat_id;
-    }
-
-    public void setCat_id(int cat_id) {
-        this.cat_id = cat_id;
-    }
-
     public Catagory getCatagory() {
         return catagory;
     }
@@ -86,7 +88,7 @@ public class Product {
         this.catagory = catagory;
     }
 
-    
+   
    
     
 }
