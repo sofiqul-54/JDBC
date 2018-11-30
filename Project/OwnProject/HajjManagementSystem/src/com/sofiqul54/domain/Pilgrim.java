@@ -13,26 +13,28 @@ public class Pilgrim {
     private String pilgrimName;
     private String fatherNamer;
     private String motherName;
-    private String gender;
+    private boolean gender;
     private Date doB;
-    private int nid;
-    private int passportNo;
+    private String nid;
+    private String passportNo;
     private Date pIsuueDate;
     private Date pExpiryDate;
     private String presentAddress;
     private String permanentAddress;
+    private String mobile;
     private Date bookingDate;
     private double bookingMoney;
    
     Category category;
+    public java.sql.Date get;
 
     public Pilgrim() {
     }
 
-    public Pilgrim(int id, int accNo, String name, String fatherNamer, String motherName, String gender, Date doB, int nid, int passportNo, Date pIsuueDate, Date pExpiryDate, String presentAddress, String permanentAddress, Date bookingDate, double bookingMoney, Category catagory) {
+    public Pilgrim(int id, int accNo, String pilgrimName, String fatherNamer, String motherName, boolean gender, Date doB, String nid, String passportNo, Date pIsuueDate, Date pExpiryDate, String presentAddress, String permanentAddress, String mobile, Date bookingDate, double bookingMoney, Category category) {
         this.id = id;
         this.accNo = accNo;
-        this.pilgrimName = name;
+        this.pilgrimName = pilgrimName;
         this.fatherNamer = fatherNamer;
         this.motherName = motherName;
         this.gender = gender;
@@ -43,6 +45,7 @@ public class Pilgrim {
         this.pExpiryDate = pExpiryDate;
         this.presentAddress = presentAddress;
         this.permanentAddress = permanentAddress;
+        this.mobile = mobile;
         this.bookingDate = bookingDate;
         this.bookingMoney = bookingMoney;
         this.category = category;
@@ -64,12 +67,12 @@ public class Pilgrim {
         this.accNo = accNo;
     }
 
-    public String getName() {
+    public String getPilgrimName() {
         return pilgrimName;
     }
 
-    public void setName(String name) {
-        this.pilgrimName = name;
+    public void setPilgrimName(String pilgrimName) {
+        this.pilgrimName = pilgrimName;
     }
 
     public String getFatherNamer() {
@@ -88,11 +91,11 @@ public class Pilgrim {
         this.motherName = motherName;
     }
 
-    public String getGender() {
+    public boolean isGender() {
         return gender;
     }
 
-    public void setGender(String gender) {
+    public void setGender(boolean gender) {
         this.gender = gender;
     }
 
@@ -104,19 +107,19 @@ public class Pilgrim {
         this.doB = doB;
     }
 
-    public int getNid() {
+    public String getNid() {
         return nid;
     }
 
-    public void setNid(int nid) {
+    public void setNid(String nid) {
         this.nid = nid;
     }
 
-    public int getPassportNo() {
+    public String getPassportNo() {
         return passportNo;
     }
 
-    public void setPassportNo(int passportNo) {
+    public void setPassportNo(String passportNo) {
         this.passportNo = passportNo;
     }
 
@@ -152,6 +155,14 @@ public class Pilgrim {
         this.permanentAddress = permanentAddress;
     }
 
+    public String getMobile() {
+        return mobile;
+    }
+
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
+    }
+
     public Date getBookingDate() {
         return bookingDate;
     }
@@ -172,14 +183,15 @@ public class Pilgrim {
         return category;
     }
 
-    public void setCategory(Category catagory) {
-        this.category = catagory;
+    public void setCategory(Category category) {
+        this.category = category;
     }
 
     @Override
     public String toString() {
-        return "Pilgrim{" + "id=" + id + ", accNo=" + accNo + ", name=" + pilgrimName + ", fatherNamer=" + fatherNamer + ", motherName=" + motherName + ", gender=" + gender + ", doB=" + doB + ", nid=" + nid + ", passportNo=" + passportNo + ", pIsuueDate=" + pIsuueDate + ", pExpiryDate=" + pExpiryDate + ", presentAddress=" + presentAddress + ", permanentAddress=" + permanentAddress + ", bookingDate=" + bookingDate + ", bookingMoney=" + bookingMoney + ", catagory=" + category + '}';
+        return "Pilgrim{" + "id=" + id + ", accNo=" + accNo + ", pilgrimName=" + pilgrimName + ", fatherNamer=" + fatherNamer + ", motherName=" + motherName + ", gender=" + gender + ", doB=" + doB + ", nid=" + nid + ", passportNo=" + passportNo + ", pIsuueDate=" + pIsuueDate + ", pExpiryDate=" + pExpiryDate + ", presentAddress=" + presentAddress + ", permanentAddress=" + permanentAddress + ", mobile=" + mobile + ", bookingDate=" + bookingDate + ", bookingMoney=" + bookingMoney + ", category=" + category + '}';
     }
 
+   
     
 }
