@@ -51,14 +51,12 @@ public class PilgrimService {
            // ps.setBoolean(5, pilgrim.);
             ps.setDate(6, new java.sql.Date(pilgrim.getDoB().getTime()));        
             ps.setString(7, pilgrim.getNid());
-            ps.setString(8, pilgrim.getPassportNo());
-            ps.setDate(9, new java.sql.Date(pilgrim.getpIsuueDate().getTime()));
-            ps.setDate(10, new java.sql.Date(pilgrim.getpExpiryDate().getTime()));
-            ps.setString(11, pilgrim.getPresentAddress());
-            ps.setString(12, pilgrim.getPermanentAddress());
-            ps.setString(13, pilgrim.getMobile());
-            ps.setDouble(14, pilgrim.getBookingMoney());
-            ps.setInt(15, pilgrim.getCategory().getId());
+            ps.setString(8, pilgrim.getPassportNo());            
+            ps.setString(9, pilgrim.getAddress());           
+            ps.setString(10, pilgrim.getMobile());
+            ps.setDate(11, new java.sql.Date(pilgrim.getBookingDate().getTime()));
+            ps.setDouble(12, pilgrim.getBookingMoney());
+            ps.setInt(13, pilgrim.getCategory().getId());
             ps.executeUpdate();
             System.out.println("Data has been inserted to Pilgrim table Successfully!!");
             

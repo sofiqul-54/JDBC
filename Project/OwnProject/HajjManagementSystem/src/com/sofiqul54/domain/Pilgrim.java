@@ -17,10 +17,7 @@ public class Pilgrim {
     private Date doB;
     private String nid;
     private String passportNo;
-    private Date pIsuueDate;
-    private Date pExpiryDate;
-    private String presentAddress;
-    private String permanentAddress;
+    private String address;
     private String mobile;
     private Date bookingDate;
     private double bookingMoney;
@@ -31,7 +28,7 @@ public class Pilgrim {
     public Pilgrim() {
     }
 
-    public Pilgrim(int id, int accNo, String pilgrimName, String fatherNamer, String motherName, boolean gender, Date doB, String nid, String passportNo, Date pIsuueDate, Date pExpiryDate, String presentAddress, String permanentAddress, String mobile, Date bookingDate, double bookingMoney, Category category) {
+    public Pilgrim(int id, int accNo, String pilgrimName, String fatherNamer, String motherName, boolean gender, Date doB, String nid, String passportNo, String address, String mobile, Date bookingDate, double bookingMoney, Category category, java.sql.Date get) {
         this.id = id;
         this.accNo = accNo;
         this.pilgrimName = pilgrimName;
@@ -41,14 +38,12 @@ public class Pilgrim {
         this.doB = doB;
         this.nid = nid;
         this.passportNo = passportNo;
-        this.pIsuueDate = pIsuueDate;
-        this.pExpiryDate = pExpiryDate;
-        this.presentAddress = presentAddress;
-        this.permanentAddress = permanentAddress;
+        this.address = address;
         this.mobile = mobile;
         this.bookingDate = bookingDate;
         this.bookingMoney = bookingMoney;
         this.category = category;
+        this.get = get;
     }
 
     public int getId() {
@@ -123,36 +118,12 @@ public class Pilgrim {
         this.passportNo = passportNo;
     }
 
-    public Date getpIsuueDate() {
-        return pIsuueDate;
+    public String getAddress() {
+        return address;
     }
 
-    public void setpIsuueDate(Date pIsuueDate) {
-        this.pIsuueDate = pIsuueDate;
-    }
-
-    public Date getpExpiryDate() {
-        return pExpiryDate;
-    }
-
-    public void setpExpiryDate(Date pExpiryDate) {
-        this.pExpiryDate = pExpiryDate;
-    }
-
-    public String getPresentAddress() {
-        return presentAddress;
-    }
-
-    public void setPresentAddress(String presentAddress) {
-        this.presentAddress = presentAddress;
-    }
-
-    public String getPermanentAddress() {
-        return permanentAddress;
-    }
-
-    public void setPermanentAddress(String permanentAddress) {
-        this.permanentAddress = permanentAddress;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public String getMobile() {
@@ -187,8 +158,17 @@ public class Pilgrim {
         this.category = category;
     }
 
+    public java.sql.Date getGet() {
+        return get;
+    }
+
+    public void setGet(java.sql.Date get) {
+        this.get = get;
+    }
+
     @Override
     public String toString() {
-        return "Pilgrim{" + "id=" + id + ", accNo=" + accNo + ", pilgrimName=" + pilgrimName + ", fatherNamer=" + fatherNamer + ", motherName=" + motherName + ", gender=" + gender + ", doB=" + doB + ", nid=" + nid + ", passportNo=" + passportNo + ", pIsuueDate=" + pIsuueDate + ", pExpiryDate=" + pExpiryDate + ", presentAddress=" + presentAddress + ", permanentAddress=" + permanentAddress + ", mobile=" + mobile + ", bookingDate=" + bookingDate + ", bookingMoney=" + bookingMoney + ", category=" + category + '}';
+        return "Pilgrim{" + "id=" + id + ", accNo=" + accNo + ", pilgrimName=" + pilgrimName + ", fatherNamer=" + fatherNamer + ", motherName=" + motherName + ", gender=" + gender + ", doB=" + doB + ", nid=" + nid + ", passportNo=" + passportNo + ", address=" + address + ", mobile=" + mobile + ", bookingDate=" + bookingDate + ", bookingMoney=" + bookingMoney + ", category=" + category + ", get=" + get + '}';
     }
+
 }

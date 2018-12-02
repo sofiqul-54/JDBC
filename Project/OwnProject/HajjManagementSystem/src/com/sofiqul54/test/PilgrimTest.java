@@ -19,11 +19,8 @@ public class PilgrimTest {
         p.setMotherName("Amina");
         p.setDoB("1990-Jan-08");
         p.setNid("2613869450144");
-        p.setPassportNo("BR12345");
-        p.setpIsuueDate("2015/11/05");
-        p.setpExpiryDate("2022/07/09");
-        p.setPresentAddress("Hasnabad");
-        p.setPermanentAddress("Dhaka");
+        p.setPassportNo("BR12345");        
+        p.setAddress("Hasnabad");        
         p.setMobile("01748567000");
         p.setBookingMoney(50000);
         p.setCategory(1);
