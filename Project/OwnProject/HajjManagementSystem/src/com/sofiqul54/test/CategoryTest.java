@@ -16,7 +16,7 @@ public class CategoryTest {
     public static void main(String[] args) {
 //        CategoryService.createTable();
        Category cat = new Category();
-       cat.setName("Package B");
+       cat.setName("Package - B");
        cat.setPackagePrice(350000);
        
        CategoryService.insert(cat);

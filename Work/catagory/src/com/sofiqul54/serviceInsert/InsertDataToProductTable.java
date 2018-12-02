@@ -1,7 +1,6 @@
 
 package com.sofiqul54.serviceInsert;
 
-import com.sofiqul54.domain.Catagory;
 import com.sofiqul54.connection.SqlDbConnection;
 import com.sofiqul54.domain.Product;
 import java.sql.Connection;

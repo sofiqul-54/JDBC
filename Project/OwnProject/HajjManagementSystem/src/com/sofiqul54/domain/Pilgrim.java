@@ -191,7 +191,4 @@ public class Pilgrim {
     public String toString() {
         return "Pilgrim{" + "id=" + id + ", accNo=" + accNo + ", pilgrimName=" + pilgrimName + ", fatherNamer=" + fatherNamer + ", motherName=" + motherName + ", gender=" + gender + ", doB=" + doB + ", nid=" + nid + ", passportNo=" + passportNo + ", pIsuueDate=" + pIsuueDate + ", pExpiryDate=" + pExpiryDate + ", presentAddress=" + presentAddress + ", permanentAddress=" + permanentAddress + ", mobile=" + mobile + ", bookingDate=" + bookingDate + ", bookingMoney=" + bookingMoney + ", category=" + category + '}';
     }
-
-   
-    
 }
