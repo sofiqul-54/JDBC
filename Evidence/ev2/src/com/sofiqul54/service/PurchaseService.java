@@ -95,5 +95,10 @@ public class PurchaseService {
         return list;
     
     }
+    
+    public static void main(String[] args) {
+        createpTable();
+        
+    }
    
 }
